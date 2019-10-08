@@ -1,4 +1,5 @@
 katz_deli = []
+
 def line(place) 
  line_array = []
  if place.length == 0 
@@ -7,6 +8,6 @@ def line(place)
    place.each.with_index(1) do |name, index|
      line_array.push("#{index}.   #{name}")
    end
-   puts "The line is currently: "#{line_array.join(" ")}"
+   puts "The line is currently: "#{line_array.join("  ")}"
  end
 end
