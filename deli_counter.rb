@@ -8,8 +8,8 @@ def line(place)
    place.each.with_index(1) do |name, index|
      line_array.push("#{index}.   #{name}")
   end    
- end
   puts "The line is currently: "#{line_array.join(" ")}"
+end
 end
 
 def take_a_number(array, name)
