@@ -5,7 +5,7 @@ def line(place)
    place.each.with_index(1) do |name, index|
      line_array.push("#{index}.   #{name}")
   end  
-  if line_array.length == 0 
+  if line_array.empty
     puts "The line is currently empty"
   else
   puts "The line is currently: "#{line_array.join(" ")}"
@@ -18,3 +18,11 @@ def take_a_number(array, name)
   puts "Welcome, #{name}. You are number (#{array.length} + 1) in line."
 end
 
+def now_serving(array)
+  if array.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array[0]}."
+    array.shift
+  end
+end
