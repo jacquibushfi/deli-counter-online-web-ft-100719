@@ -1,8 +1,12 @@
-def line(katz_deli) 
-  katz_deli = []
- if katz_deli = nil 
+katz_deli = []
+def line(place) 
+ line_array = []
+ if place.length == 0 
    puts "The line is currently empty"
  else
-   puts "#{katz_deli} is number #katz_deli"
-end
+   place.each.with_index(1) do |name, index|
+     line_array.push("#{index} is #{name}")
+   end
+   puts "The line is currently: "#{line_array.join(" ")}"
+ end
 end
