@@ -10,6 +10,7 @@ def line(place)
   end    
    puts "The line is currently: "#{line_array.join(" ")}"
  end
+ 
 end
 
 def take_a_number(array, name)
