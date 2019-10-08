@@ -2,13 +2,15 @@ katz_deli = []
 
 def line(place) 
  line_array = []
- if place.length == 0 
-   puts "The line is currently empty."
- else
+ #if place.length == 0 
+#   puts "The line is currently empty."
+# else
    place.each.with_index(1) do |name, index|
      line_array.push("#{index}.   #{name}")
   end    
- end
+# end
+ if line_array == nil 
+   puts 
   puts "The line is currently: "#{line_array.join(" ")}"
 end
 
