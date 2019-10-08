@@ -5,7 +5,7 @@ def line(place)
    puts "The line is currently empty"
  else
    place.each.with_index(1) do |name, index|
-     line_array.push("#{index} is #{name}")
+     line_array.push("#{index}.   #{name}")
    end
    puts "The line is currently: "#{line_array.join(" ")}"
  end
